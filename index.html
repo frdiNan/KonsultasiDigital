@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konsultasi Digital</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="containerr">
+      <div class="profile-card">
+        <div class="profile-card-inner">
+          <div class="profile-card-front">
+            <img
+              src="img/nofran-removebg-preview.png"
+              alt="Foto Profil"
+              class="profile-photo"
+            />
+            <p class="profile-name">Nofran Kurniawan</p>
+          </div>
+          <div class="profile-card-back">
+            <p>
+              "Janganlah Kamu Seperti virus yang selalu menyerang kelemahan
+              orang lain, Tapi jadilah seperti Anti Virus Yang selalu
+              mem-protect kesalahan"
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="profile-card">
+        <div class="profile-card-inner">
+          <div class="profile-card-front">
+            <img
+              src="img/kariss.jpeg"
+              alt="Foto Profil"
+              class="profile-photo"
+            />
+            <p class="profile-name">Nur Karismawan</p>
+          </div>
+          <div class="profile-card-back">
+            <p>
+              "Keberanian untuk bermimpi besar adalah awal dari pencapaian
+              besar. Tindakan kecil yang konsisten akan membawa perubahan besar
+              dalam hidupmu."
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="profile-card">
+        <div class="profile-card-inner">
+          <div class="profile-card-front">
+            <img
+              src="img/ferdinan.jpeg"
+              alt="Foto Profil"
+              class="profile-photo"
+            />
+            <p class="profile-name">Ferdinan</p>
+          </div>
+          <div class="profile-card-back">
+            <p>
+              "Tak ada masalah yang terlalu sulit, hanya tantangan yang belum
+              kita pecahkan. Setiap kode error adalah peluang untuk belajar, dan
+              setiap debug adalah langkah menuju kesuksesan."
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="profile-card">
+        <div class="profile-card-inner">
+          <div class="profile-card-front">
+            <img
+              src="img/annisaa.jpeg"
+              alt="Foto Profil"
+              class="profile-photo"
+            />
+            <p class="profile-name">Annisa Bestricia</p>
+          </div>
+          <div class="profile-card-back">
+            <p>
+              "Tidak ada yang lebih buruk dari ke tidak beranian untuk mencoba.
+              Ingatlah, lebih baik gagal setelah mencoba dari pada tidak pernah
+              mencoba sama sekali. "
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="profile-card">
+        <div class="profile-card-inner">
+          <div class="profile-card-front">
+            <img src="img/difa.jpeg" alt="Foto Profil" class="profile-photo" />
+            <p class="profile-name">Hidayatun</p>
+          </div>
+          <div class="profile-card-back">
+            <p>
+              "Selalu ada lebih banyak hal yang patut untuk disyukuri dari pada
+              mengeluh."
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="profile-card">
+        <div class="profile-card-inner">
+          <div class="profile-card-front">
+            <img
+              src="img/delvin.jpeg"
+              alt="Foto Profil"
+              class="profile-photo"
+            />
+            <p class="profile-name">Delvin</p>
+          </div>
+          <div class="profile-card-back">
+            <p>
+              "Kesuksesan bukanlah hasil dari bakat semata, tetapi dari kerja
+              keras dan tekad yang kuat. Setiap hari adalah kesempatan baru
+              untuk mendekati tujuanmu"
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1>Konsultasi Digital</h1>
+      <div id="question-container">
+        <div class="question" id="question1">
+          <p>Apakah komputer tidak bisa dinyalakan?</p>
+          <button onclick="handleAnswer('question1', 'yes')">Yes</button>
+          <button onclick="handleAnswer('question1', 'no')">No</button>
+        </div>
+        <div class="question" id="question2">
+          <p>Apakah komputer menyala tetapi tidak ada tampilan di monitor?</p>
+          <button onclick="handleAnswer('question2', 'yes')">Yes</button>
+          <button onclick="handleAnswer('question2', 'no')">No</button>
+        </div>
+        <div class="question" id="question3">
+          <p>Apakah komputer sering tiba-tiba mati sendiri?</p>
+          <button onclick="handleAnswer('question3', 'yes')">Yes</button>
+          <button onclick="handleAnswer('question3', 'no')">No</button>
+        </div>
+        <div class="question" id="question4">
+          <p>
+            Apakah komputer berjalan lambat meskipun tidak banyak program yang
+            dijalankan?
+          </p>
+          <button onclick="handleAnswer('question4', 'yes')">Yes</button>
+          <button onclick="handleAnswer('question4', 'no')">No</button>
+        </div>
+        <div class="question" id="question5">
+          <p>
+            Apakah ada suara beep yang tidak biasa saat komputer dinyalakan?
+          </p>
+          <button onclick="handleAnswer('question5', 'yes')">Yes</button>
+          <button onclick="handleAnswer('question5', 'no')">No</button>
+        </div>
+        <div class="question" id="question6">
+          <p>Apakah komputer sering mengalami blue screen (layar biru)?</p>
+          <button onclick="handleAnswer('question6', 'yes')">Yes</button>
+          <button onclick="handleAnswer('question6', 'no')">No</button>
+        </div>
+        <div class="question" id="question7">
+          <p>
+            Apakah perangkat keras (seperti keyboard atau mouse) tidak
+            terdeteksi?
+          </p>
+          <button onclick="handleAnswer('question7', 'yes')">Yes</button>
+          <button onclick="handleAnswer('question7', 'no')">No</button>
+        </div>
+        <div class="question" id="question8">
+          <p>
+            Apakah ada pesan error saat mencoba mengakses file atau folder
+            tertentu?
+          </p>
+          <button onclick="handleAnswer('question8', 'yes')">Yes</button>
+          <button onclick="handleAnswer('question8', 'no')">No</button>
+        </div>
+        <div class="question" id="question9">
+          <p>Apakah komputer mengalami overheating (panas berlebihan)?</p>
+          <button onclick="handleAnswer('question9', 'yes')">Yes</button>
+          <button onclick="handleAnswer('question9', 'no')">No</button>
+        </div>
+        <div class="question" id="question10">
+          <p>Apakah ada masalah dengan koneksi internet atau jaringan?</p>
+          <button onclick="handleAnswer('question10', 'yes')">Yes</button>
+          <button onclick="handleAnswer('question10', 'no')">No</button>
+        </div>
+      </div>
+      <div id="result"></div>
+
+      <button onClick="document.location.reload(true)">Mulai Ulang</button>
+    </div>
+
+    <div class="credit">
+      <p>
+        Created By
+        <a href="">Ferdinan, Annisa, Karismawan, Nofran, Nadzifa, Delvin</a>. |
+        &copy; 2024
+      </p>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
