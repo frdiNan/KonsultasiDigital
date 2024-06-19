@@ -235,6 +235,7 @@ button {
   display: flex;
   align-items: center;
 }
+
 .judul img {
   width: 150px; /* Sesuaikan lebar logo */
   height: auto; /* Mempertahankan rasio aspek logo */
