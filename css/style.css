@@ -12,44 +12,44 @@ body {
 }
 
 .container {
-  background-image: url(../img/background1.jpg);
-  padding: 20px;
-  border-radius: 15px 50px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 90%;
   max-width: 600px;
-  text-align: center;
+  margin: 10px auto;
+  padding: 80px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  background-size: cover;
+  background-image: url(../img/background1.jpg);
 }
 
 h1 {
-  margin-bottom: 20px;
+  text-align: center;
 }
 
 .question {
-  display: none;
   margin-bottom: 20px;
 }
 
-button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  margin: 5px;
+.question p {
+  margin-bottom: 10px;
 }
 
-button:hover {
-  background-color: #0056b3;
+label {
+  margin-right: 10px;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
 }
 
 #result {
-  font-size: 18px;
+  margin-top: 20px;
   font-weight: bold;
+  text-align: center;
 }
-
 /* foto */
 
 .containerr {
@@ -219,4 +219,28 @@ button:hover {
   .profile-card-back p {
     font-size: 10px;
   }
+}
+
+/* Ini untuk judul fakultas ilmu komputer universitas sumatera selatan */
+.judul-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  margin: 0 20px; /* Menyesuaikan jarak antara teks dan logo */
+  font-size: 25px;
+}
+
+.judul {
+  display: flex;
+  align-items: center;
+}
+.judul img {
+  width: 150px; /* Sesuaikan lebar logo */
+  height: auto; /* Mempertahankan rasio aspek logo */
+}
+
+h1,
+p {
+  margin: 0;
 }

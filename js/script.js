@@ -1,7 +1,5 @@
-let currentQuestion = 0;
 const questions = document.querySelectorAll(".question");
 const resultContainer = document.getElementById("result");
-const totalQuestions = questions.length;
 
 let answers = {
   cannotPowerOn: false,
@@ -16,35 +14,27 @@ let answers = {
   networkIssues: false,
 };
 
-function handleAnswer(questionId, answer) {
+function handleAnswer(questionId, isChecked) {
   if (questionId === "question1") {
-    answers.cannotPowerOn = answer === "yes";
+    answers.cannotPowerOn = isChecked;
   } else if (questionId === "question2") {
-    answers.noDisplay = answer === "yes";
+    answers.noDisplay = isChecked;
   } else if (questionId === "question3") {
-    answers.shutsDown = answer === "yes";
+    answers.shutsDown = isChecked;
   } else if (questionId === "question4") {
-    answers.slowPerformance = answer === "yes";
+    answers.slowPerformance = isChecked;
   } else if (questionId === "question5") {
-    answers.beepSound = answer === "yes";
+    answers.beepSound = isChecked;
   } else if (questionId === "question6") {
-    answers.blueScreen = answer === "yes";
+    answers.blueScreen = isChecked;
   } else if (questionId === "question7") {
-    answers.hardwareNotDetected = answer === "yes";
+    answers.hardwareNotDetected = isChecked;
   } else if (questionId === "question8") {
-    answers.errorAccessingFiles = answer === "yes";
+    answers.errorAccessingFiles = isChecked;
   } else if (questionId === "question9") {
-    answers.overheating = answer === "yes";
+    answers.overheating = isChecked;
   } else if (questionId === "question10") {
-    answers.networkIssues = answer === "yes";
-  }
-
-  document.getElementById(questionId).style.display = "none";
-  currentQuestion++;
-  if (currentQuestion < totalQuestions) {
-    questions[currentQuestion].style.display = "block";
-  } else {
-    showResult();
+    answers.networkIssues = isChecked;
   }
 }
 
@@ -85,6 +75,3 @@ function showResult() {
 
   resultContainer.innerText = resultText;
 }
-
-// Inisialisasi Pertanyaan Pertama:
-questions[currentQuestion].style.display = "block";
